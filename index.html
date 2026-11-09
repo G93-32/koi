@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Koi — a pond drawn in code</title>
+<meta name="description" content="Two koi circling a dark pond. Every scale, fin and ripple is drawn live in the browser with plain JavaScript. No images, no libraries." />
+<meta name="theme-color" content="#04070a" />
+<meta property="og:title" content="Koi — a pond drawn in code" />
+<meta property="og:description" content="Two koi circling a dark pond, drawn live with plain JavaScript. No images, no libraries." />
+<meta property="og:type" content="website" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2304070a'/%3E%3Cpath d='M16 5a11 11 0 0 1 0 22a5.5 5.5 0 0 1 0-11a5.5 5.5 0 0 0 0-11z' fill='%23e8963a'/%3E%3Cpath d='M16 27a11 11 0 0 1 0-22a5.5 5.5 0 0 1 0 11a5.5 5.5 0 0 0 0 11z' fill='%23efe9dc'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<canvas id="pond" role="img" aria-label="An animated pond seen from above: two koi, one gold and one white, circle each other among teal ripples."></canvas>
+
+<div class="intro" aria-hidden="true">
+  <span class="intro-word">Koi</span>
+  <span class="intro-sub">with JavaScript</span>
+</div>
+
+<header class="hud tl">
+  <h1>Koi</h1>
+  <p>A pond drawn in code</p>
+</header>
+
+<p class="hud tr">No images<br />No libraries<br />Canvas 2D</p>
+
+<p class="hud bl" id="hint">Move to lead them &middot; Click to stir the water</p>
+
+<nav class="hud br">
+  <a href="https://github.com/G93-32/koi" target="_blank" rel="noopener">Source</a>
+  <a href="https://g93-32.github.io/G-Portfolio/">Gurjot Singh</a>
+</nav>
+
+<noscript><p class="noscript">This pond is drawn with JavaScript. Turn it on to see the koi.</p></noscript>
+
+<script src="koi.js"></script>
+</body>
+</html>
